@@ -29,8 +29,9 @@ namespace BouncingBall
             }
             else
             {
-                if(h*bounce > window)
+                while (h * bounce > window)
                 {
+                    h = h * bounce;
                     sightings += 2;
                 }
             }
